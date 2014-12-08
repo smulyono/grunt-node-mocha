@@ -71,3 +71,5 @@ module.exports = function(grunt){
 ## Release History
 
 _v0.1.0_ - Initial release!
+
+-v0.1.1_ - Package description update
