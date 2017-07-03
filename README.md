@@ -40,26 +40,24 @@ module.exports = function(grunt){
             without_coverage : {
                 src : ['examples/test-example.js'],
                 options : {
-                    mochaOptions : {
-                        globals : ['expect'],
-                        timeout : 3000,
-                        ignoreLeaks : false,
-                        ui : 'bdd',
-                        reporter : 'landing'                        
-                    }
+                    mochaOptions : [],
+                    globals : ['expect'],
+                    timeout : 3000,
+                    ignoreLeaks : false,
+                    ui : 'bdd',
+                    reporter : 'landing'
                 }
             },
             with_coverage: {
                 src : ['examples/test-example.js'],
                 options : {
-                    mochaOptions : {
-                        globals : ['expect'],
-                        timeout : 3000,
-                        ignoreLeaks : false,
-                        ui : 'bdd',
-                        reporter : 'spec'                        
-                    },
-                    reportFormats : ['html'] // other grunt-mocha-istanbul can be added here
+                    mochaOptions : [],
+                    globals : ['expect'],
+                    timeout : 3000,
+                    ignoreLeaks : false,
+                    ui : 'bdd',
+                    reporter : 'spec'
+                    reportFormats : ['html'], // other grunt-mocha-istanbul can be added here
                     runCoverage : true // Run the unit test and generate coverage test
                 }
             }
